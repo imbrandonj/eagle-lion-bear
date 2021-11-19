@@ -14,17 +14,19 @@ alert("Best out of 5 wins!");
 
 console.log("Hello " + username);
 
-/* Restarted games begin here 
+// Restarted games begin here 
+let playGame = "Yes";
+let quitGame = 0;
 
-function game() { } */ 
+while ((playGame === "Yes") && (quitGame <= 0)) { 
 
 
 let userWins = 0;
 let computerWins = 0;
 
-// Figure out looping all of the below together.
 
-while ((userWins < 3) && (computerWins < 3)) {   
+
+    while ((userWins < 3) && (computerWins < 3)) {   
 
     /* Player is prompted for option
         "You choose:"
@@ -83,29 +85,34 @@ while ((userWins < 3) && (computerWins < 3)) {
             } 
         } // end calculateWinner function
 
-    const outcome = calculateWinner(playerSelection, computerSelection);
-    alert(outcome);
-    console.log(outcome);
-    alert(username + " " + userWins + " vs Computer " + computerWins); 
-    console.log(username + " " + userWins + " vs Computer " + computerWins);
+        const outcome = calculateWinner(playerSelection, computerSelection);
+        alert(outcome);
+        console.log(outcome);
+        alert(username + " " + userWins + " vs Computer " + computerWins); 
+        console.log(username + " " + userWins + " vs Computer " + computerWins);
 
     // Begin next game of 5 
-}
+    }
 
     // OR
     // Declare Winner of 5 
 
-  if (userWins === 3) {
+    if (userWins === 3) {
         alert(username + " wins best of five!");
     } else { 
         alert("The Computer wins best of five!");
     }
-    
 
-/* Ask, "play again?"
+    /* Ask, "play again?"
     If yes, start over
     Loop */
+    
+    const playGame = prompt("Play again?");
 
+    if (playGame != "Yes") {
+        quitGame++
+    } 
+}
 
     // If no, End Loop, "thanks for playing" */
 
