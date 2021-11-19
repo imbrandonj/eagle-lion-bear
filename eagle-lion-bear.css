@@ -1,0 +1,22 @@
+html {
+    background-color: antiquewhite;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid black;
+}
+
+#instructions { 
+    text-align: center;
+    line-height: 2em;
+    border-bottom: 1px solid black;
+}
