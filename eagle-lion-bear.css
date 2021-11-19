@@ -7,16 +7,28 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-family: monospace;
+    font-size: 1.2em;
 }
 
 h1 {
     margin: 1em;
-    padding: 1em;
+    padding: 0.5em;
     border: 1px solid black;
+    font-variant: small-caps;
+    font-size: 3em;
+    font-weight: 100;
 }
 
 #instructions { 
     text-align: center;
-    line-height: 2em;
+    line-height: 2.5em;
     border-bottom: 1px solid black;
+}
+
+#trumps {
+    font-size: 1.2em;
+    word-spacing: 0.8em;
+    line-height: 0;
+    margin: 1.5em 0 0.5em 0;
 }
