@@ -6,7 +6,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     font-family: monospace;
     font-size: 1.2em;
 }
@@ -20,7 +19,7 @@ h1 {
     font-weight: 100;
 }
 
-#instructions { 
+.instructions { 
     text-align: center;
     line-height: 2.5em;
     border-bottom: 1px solid black;
@@ -31,4 +30,22 @@ h1 {
     word-spacing: 0.8em;
     line-height: 0;
     margin: 1.5em 0 0.5em 0;
+}
+
+p {
+    text-align: center;
+}
+
+#animals {
+    
+}
+
+input {
+    width: 30em;
+    margin: 4em 8em 0;
+}
+
+input#eagle {
+    width: 16em;
+    padding: 0 7em;
 }
