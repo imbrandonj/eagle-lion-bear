@@ -37,7 +37,8 @@ p {
 }
 
 #animals {
-    
+    display: flex;
+    flex-flow: row nowrap;
 }
 
 input {
@@ -48,4 +49,12 @@ input {
 input#eagle {
     width: 16em;
     padding: 0 7em;
+}
+
+input#bear {
+    opacity: 0.9;
+}
+
+#eagle:hover {
+    
 }
